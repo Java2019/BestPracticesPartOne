@@ -1,5 +1,7 @@
 package com.nemo.bestpracticespartone;
 
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothClass;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.BatteryManager;
@@ -24,6 +26,19 @@ public class MainActivity extends AppCompatActivity {
                 CheckBattery();
             }
         });
+
+        Button button1 = (Button)findViewById(R.id.biStart);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BIStart();
+            }
+        });
+    }
+
+    private void BIStart() {
+        Intent intent = new Intent(BluetoothAdapter.ACTION_STATE_CHANGED);
+        startActivityForResult(intent, 0);
     }
 
     @Override

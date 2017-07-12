@@ -19,4 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/bText"/>
+    <Button
+        android:id="@+id/biStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/biText"/>
 </LinearLayout>

@@ -2,4 +2,5 @@
     <string name="app_name">Best practices part one</string>
     <string name="bText">Check battery</string>
     <string name="set">Settings</string>
+    <string name="biText">Start activity for resalt</string>
 </resources>
