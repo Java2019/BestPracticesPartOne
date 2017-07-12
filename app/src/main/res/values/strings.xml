@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Best practices part one</string>
+    <string name="bText">Check battery</string>
 </resources>
