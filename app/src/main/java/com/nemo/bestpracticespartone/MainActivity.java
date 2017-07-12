@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void BIStart() {
-        Intent intent = new Intent(BluetoothAdapter.ACTION_STATE_CHANGED);
+        Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
         startActivityForResult(intent, 0);
     }
 
