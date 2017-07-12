@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void BIStart() {
-        Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+        Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
         startActivityForResult(intent, 0);
         Toast.makeText(getApplicationContext(),"Turned on"
                 ,Toast.LENGTH_LONG).show();
